@@ -39,7 +39,7 @@ GEM
       execjs
     coffee-script-source (1.6.2)
     daemons (1.1.9)
-    devise (2.1.2)
+    devise (2.2.3)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.1)
       railties (~> 3.1)
@@ -143,7 +143,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
-  devise
+  devise (>= 2.2.3)
   factory_girl (~> 3.5)
   jquery-rails
   rails (= 3.2.13)

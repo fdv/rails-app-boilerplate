@@ -33,7 +33,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
-gem 'devise'
+gem 'devise', '>= 2.2.3'
 
 group :test, :development do
   gem 'thin'
