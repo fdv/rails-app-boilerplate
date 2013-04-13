@@ -72,6 +72,8 @@ module ConfigManager
         value.to_s
       when :yaml
         value.to_yaml
+      when :json
+        value.to_json
       else
         value
       end

@@ -32,13 +32,23 @@ Then run:
 
 Now, you can access your application in your Web browser at `127.0.0.1:3000`.
 
-## Playing with application settings
+# Playing with application settings
 
 `params.xxx`: calls the xxx application param. Application params are stored in a serialized array so they can be added / removed without changing the data model.
 
 Calling `<%= params.app_name_ %>` in the views displays the application name.
 
-In your controllers:
+To add new settings, edit app/models/app.rb, and call the setting method:
+
+```ruby
+setting :some_setting,                  :string, 'Some value'
+setting :numeric_setting,               :integer, 1
+setting :boolean_setting,               :boolean, true
+```
+
+Settings type can be `string`, `integer`, `boolean`, `yaml` or `json`.
+
+Then you can set / get your settings like database fields.
 
 ```ruby
 app = App.default
@@ -49,3 +59,4 @@ app.save
 Creates the `foo` param for the application.
 
 `App.default` method loads the first and only App record from the database. App is created at application init.
+
