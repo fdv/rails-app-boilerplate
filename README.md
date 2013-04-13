@@ -66,3 +66,10 @@ Creates the `foo` param for the application.
 
 # Available helpers
 
+`page_header(title, tag='h1')`: displays a formated page title, using the `h1` tag by default.
+
+```html
+<div class="page-header">
+  <h1>Some title here</h1>
+</div>
+```
