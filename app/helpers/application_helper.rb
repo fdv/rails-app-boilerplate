@@ -5,4 +5,8 @@ module ApplicationHelper
     end    
   end
   
+  def app
+    @app ||= App.default
+  end
+  
 end

@@ -13,7 +13,7 @@ It provides:
 * A Twitter Bootstrap fluid layout
 * A full registration / authentication part
 * A few helpers to be used everywhere in the application
-* An application params system
+* An application settings system
 * Rspec, Webrat and Factory Girl for testing
 
 The idea came while discussing with my colleague and friend [Yann Moisan](https://github.com/YannMoisan) about hackatons and how some people actually bootstraped their application befor the event so they won't have to spend 10+ minutes building what can be easily done before. That's how I realized that I did the same thing for every project I start, this leading to never finished projects.
@@ -38,9 +38,9 @@ Now, you can access your application in your Web browser at `127.0.0.1:3000`.
 
 # Playing with application settings
 
-`params.xxx`: calls the xxx application param. Application params are stored in a serialized array so they can be added / removed without changing the data model.
+`app.xxx`: calls the xxx application setting. Application params are stored in a serialized array so they can be added / removed without changing the data model.
 
-Calling `<%= params.app_name_ %>` in the views displays the application name.
+Calling `<%= app.app_name_ %>` in the views displays the application name.
 
 To add new settings, edit app/models/app.rb, and call the setting method:
 
