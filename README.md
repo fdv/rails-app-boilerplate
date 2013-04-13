@@ -73,3 +73,5 @@ Creates the `foo` param for the application.
   <h1>Some title here</h1>
 </div>
 ```
+
+`app.xxx` : calls the application setting xxx.
