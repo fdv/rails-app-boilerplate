@@ -1,6 +1,8 @@
 Rails Application Boilerplate
 =============================
 
+[![Build Status](https://travis-ci.org/fdv/rails-app-boilerplate.png)](https://travis-ci.org/fdv/rails-app-boilerplate)
+
 Rails Application Boilerplate is a small, ready to code, Rails application. It was intended to avoid repeating the same process for every Rails project I start.
 
 It provides:
