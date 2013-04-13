@@ -1,6 +1,5 @@
 class HomeController < ApplicationController
   def index
-    app = App.default
-    app.save
+    @app = App.default
   end
 end

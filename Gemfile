@@ -39,5 +39,6 @@ group :test, :development do
   gem 'thin'
   gem 'rspec-rails', '~> 2.12.0'
   gem 'factory_girl', '~> 3.5'
+  gem 'factory_girl_rails'
   gem 'webrat'
 end
