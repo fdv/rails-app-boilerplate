@@ -4,6 +4,7 @@ Rails Application Boilerplate
 [![Build Status](https://travis-ci.org/fdv/rails-app-boilerplate.png)](https://travis-ci.org/fdv/rails-app-boilerplate)
 [![Dependency Status](https://gemnasium.com/fdv/rails-app-boilerplate.png)](https://gemnasium.com/fdv/rails-app-boilerplate)
 [![Code Climate](https://codeclimate.com/github/fdv/rails-app-boilerplate.png)](https://codeclimate.com/github/fdv/rails-app-boilerplate)
+
 Rails Application Boilerplate is a small, ready to code, Rails application. It was intended to avoid repeating the same process for every Rails project I start.
 
 It provides:
@@ -62,4 +63,6 @@ app.save
 Creates the `foo` param for the application.
 
 `App.default` method loads the first and only App record from the database. App is created at application init.
+
+# Available helpers
 
