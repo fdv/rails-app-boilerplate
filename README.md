@@ -5,12 +5,12 @@ Rails Application Boilerplate is a small, ready to code, Rails application. It w
 
 It provides:
 
-–   A configured Rails application 
--   A Twitter Bootstrap fluid layout
-–   A full registration / authentication part
--   A few helpers to be used everywhere in the application
-–   An application params system
--   Rspec, Webrat and Factory Girl for testing
+* A configured Rails application 
+* A Twitter Bootstrap fluid layout
+* A full registration / authentication part
+* A few helpers to be used everywhere in the application
+* An application params system
+* Rspec, Webrat and Factory Girl for testing
 
 The idea came while discussing with my colleague and friend [Yann Moisan](https://github.com/YannMoisan) about hackatons and how some people actually bootstraped their application befor the event so they won't have to spend 10+ minutes building what can be easily done before. That's how I realized that I did the same thing for every project I start, this leading to never finished projects.
 
@@ -18,17 +18,17 @@ The idea came while discussing with my colleague and friend [Yann Moisan](https:
 
 Fork or clone Rails App Boilerplate from Github:
 
-  $ git clone git://github.com/fdv/rails-app-boilerplate.git
+    $ git clone git://github.com/fdv/rails-app-boilerplate.git
 
 Copy config/database.yml.yourdatabase to config/database.yml and fill in your credential.
 
 Then run:
 
-  $ bundle install
-  $ rake db:create
-  $ rake db:migrate
-  $ rake db:seed
-  $ ./scripts/rails server
+    $ bundle install
+    $ rake db:create
+    $ rake db:migrate
+    $ rake db:seed
+    $ ./scripts/rails server
 
 Now, you can access your application in your Web browser at `127.0.0.1:3000`.
 
@@ -40,9 +40,11 @@ Calling `<%= params.app_name_ %>` in the views displays the application name.
 
 In your controllers:
 
-  app = App.default
-  app.foo = "bar"
-  app.save
+```ruby
+app = App.default
+app.foo = "bar"
+app.save
+```
 
 Creates the `foo` param for the application.
 
