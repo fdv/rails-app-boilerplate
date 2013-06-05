@@ -33,6 +33,8 @@ group :assets do
 end
 
 gem 'jquery-rails'
+
+#user authentication
 gem 'devise', '~> 2'
 
 group :test, :development do
@@ -44,4 +46,17 @@ group :test do
   gem 'factory_girl', '~> 3'
   gem 'factory_girl_rails'
   gem 'webrat'
+
+  #debugging
+  gem "pry"
+  gem "pry-debugger"
+end
+
+group :development do
+  #show great looking error pages with extra functionality
+  gem "better_errors"
+  gem "binding_of_caller"
+
+  #load rails much faster in development
+  gem 'rails-dev-boost', git: 'git://github.com/thedarkone/rails-dev-boost.git'
 end
