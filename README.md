@@ -16,7 +16,7 @@ It provides:
 * An application settings system
 * Rspec, Webrat and Factory Girl for testing
 
-The idea came while discussing with my colleague and friend [Yann Moisan](https://github.com/YannMoisan) about hackatons and how some people actually bootstraped their application befor the event so they won't have to spend 10+ minutes building what can be easily done before. That's how I realized that I did the same thing for every project I start, this leading to never finished projects.
+The idea came while discussing with my colleague and friend [Yann Moisan](https://github.com/YannMoisan) about hackatons and how some people actually bootstraped their application before the event so they won't have to spend 10+ minutes building what can be easily done before. That's how I realized that I did the same thing for every project I start, this leading to never finished projects.
 
 # Application init
 
