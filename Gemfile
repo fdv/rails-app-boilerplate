@@ -23,22 +23,40 @@ end
 
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.13'
+gem 'rails', '~> 3.2'
 gem "twitter-bootstrap-rails"
 
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
+  gem 'sass-rails',   '~> 3.2'
+  gem 'coffee-rails', '~> 3.2'
   gem 'uglifier', '>= 1.0.3'
 end
 
 gem 'jquery-rails'
-gem 'devise', '>= 2.2.3'
+
+#user authentication
+gem 'devise', '~> 2'
 
 group :test, :development do
   gem 'thin'
-  gem 'rspec-rails', '~> 2.12.0'
-  gem 'factory_girl', '~> 3.5'
+end
+
+group :test do
+  gem 'rspec-rails', '~> 2'
+  gem 'factory_girl', '~> 3'
   gem 'factory_girl_rails'
   gem 'webrat'
+
+  #debugging
+  gem "pry"
+  gem "pry-debugger"
+end
+
+group :development do
+  #show great looking error pages with extra functionality
+  gem "better_errors"
+  gem "binding_of_caller"
+
+  #load rails much faster in development
+  gem 'rails-dev-boost', git: 'git://github.com/thedarkone/rails-dev-boost.git'
 end
