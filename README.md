@@ -32,6 +32,7 @@ Then run:
     $ rake db:create
     $ rake db:migrate
     $ rake db:seed
+    $ rake secret    #generate new secret token for your app
     $ ./scripts/rails server
 
 Now, you can access your application in your Web browser at `127.0.0.1:3000`.
