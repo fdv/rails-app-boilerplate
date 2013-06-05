@@ -37,6 +37,9 @@ gem 'devise', '~> 2'
 
 group :test, :development do
   gem 'thin'
+end
+
+group :test do
   gem 'rspec-rails', '~> 2'
   gem 'factory_girl', '~> 3'
   gem 'factory_girl_rails'
