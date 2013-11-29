@@ -32,7 +32,7 @@ Then run:
     $ rake db:create
     $ rake db:migrate
     $ rake db:seed
-    $ ./scripts/rails server
+    $ ./script/rails server
 
 Now, you can access your application in your Web browser at `127.0.0.1:3000`.
 
